@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title></title>
+	<meta name="author" content="Danniel Rolfe" />
+	<meta name="description" content="" />
+	<meta name="keywords"  content=""/>
+	<meta name="Resource-type" content="Document" />
+
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
+	<link rel="stylesheet" type="text/css" href="css/jquery.fullPage.css" />
+    <link rel="stylesheet" type="text/css" href="css/reset.css"/>
+    <link rel="stylesheet" type="text/css" href="css/style.css"/>
+    <link rel="stylesheet" type="text/css" href="css/loadie.css"/>
+	
+	<!--Style-->
+	<link rel="stylesheet" type="text/css" href="css/qaStyle.css">
+	
+	<!--Fonts-->
+	<link href='http://fonts.googleapis.com/css?family=Josefin+Sans:400,700,700italic' rel='stylesheet' type='text/css'/>
+	<link href='http://fonts.googleapis.com/css?family=Neuton:400,700,400italic' rel='stylesheet' type='text/css'/>
+	<link href='http://fonts.googleapis.com/css?family=Arimo' rel='stylesheet' type='text/css'/>
+
+	<!--[if IE]>
+		<script type="text/javascript">
+			 var console = { log: function() {} };
+		</script>
+	<![endif]-->
+
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/modernizr.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+	<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="js/jquery.easings.min.js"></script>
+    <script type="text/javascript" src="js/jquery.slimscroll.min.js"></script>
+	<script type="text/javascript" src="js/jquery.fullPage.min.js"></script>
+	<script type="text/javascript" src="js/less.min.js"></script>
+    <script type="text/javascript" src="js/jquery.loadie.min.js"></script>
+    <script>$('body').loadie(); // Change the wrapper if wanted.</script>
+	<script type="text/javascript">
+		$(document).ready(function() {
+			$('#fullpage').fullpage({
+				sectionsColor: ['#555555', '#ffffff', '#111111', '#333333', '#ccddff'],
+				anchors: ['firstPage', 'secondPage', '3rdPage', '4thpage', 'lastPage'],
+				menu: '#menu',
+				verticalCentered: true,
+				resize: false,
+				scrollbar: true,
+				slideSelector: '.slide',
+                autoScrolling: true,
+                easing: 'easeInQuart',
+                easingcss3: 'ease',
+                responsive: 1,
+                
+                //Accessibility
+                keyboardScrolling: true,
+                animateAnchor: true,
+  
+			});
+        });
+   
+	</script>
+
+</head>
+<body>
+
+    
+    
+<header class="cd-header">
+    <div class="cd-logo"><img src="img/qauliaAnalyticsLogo.png"></div>
+    <nav>
+        <ul class="cd-secondary-nav menu" id="menu">
+            <li data-menuanchor="firstPage" class="active"><a href="#firstPage">Home</a></li>
+            <li data-menuanchor="secondPage"><a href="#secondPage">About Us</a></li>
+            <li data-menuanchor="3rdPage"><a href="#3rdPage">What We Do</a></li>
+            <li data-menuanchor="4thpage"><a href="#4thpage">Contact Us</a></li>
+        </ul>
+    </nav>
+    
+    <a class="cd-primary-nav-trigger" href="#">
+		<span class="cd-menu-text">Menu</span><span class="cd-menu-icon"></span>
+	</a> <!-- cd-primary-nav-trigger -->
+</header>   
+
+<nav>
+	<ul class="cd-primary-nav">
+		<li class="cd-label">About us</li>
+		<li><a href="#0">The team</a></li>
+		<li><a href="#0">Our services</a></li>
+		<li><a href="#0">Our Products</a></li>
+        <li class="cd-label">Work With Us</li>
+        <li><a href="#0">Start A Project</a></li>
+        <li><a href="#0">Consulting</a></li>
+        <li class="cd-label">Follow Us</li>
+        <li class="cd-social cd-facebook"><a href="#0">Facebook</a></li>
+        <li class="cd-social cd-instagram"><a href="#0">Instagram</a></li>
+        <li class="cd-social cd-dribbble"><a href="#0">Dribbble</a></li>
+        <li class="cd-social cd-twitter"><a href="#0">Twitter</a></li>
+		<li id="copyright">&copy;Qaulia Analytics</li>
+        <li id="copyright">Website by Danniel Rolfe | <a href="http://www.dannielrolfe.com">www.dannielrolfe.com</a></li>
+	</ul>
+</nav>
+    
+<div id="fullpage" class="fullpage-wrapper">	
+    
+<!-- Section 0 Home-->
+	<div class="section homeBackground" id="section0">
+        <div class="containter">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="text-center hidden-xs" id="homePage">
+                    <h1>Whether <span class="funFonts">you</span> run a festival, <span class="funFonts">manage</span> a museum or curate a gallery, <span class="funFonts">Qualia’s</span> open digital tools offer a sustainable model for capturing audience feedback and improving <span class="funFonts">participation</span> and <span class="funFonts">engagement</span>.
+</h1>
+                        </div>
+                    
+                    <div class="text-center visible-xs" id="homePage">
+                    <h3>Whether <span class="mobile">you</span> run a festival, <span class="mobile">manage</span> a museum or curate a gallery, <span class="mobile">Qualia’s</span> open digital tools offer a sustainable model for capturing audience feedback and improving <span class="mobile">participation</span> and engagement.
+</h3>
+                        </div>
+                
+                </div>
+            </div><!--/row-->
+        </div><!--/container--> 
+	</div>
+<!--/section 0 -->
+    
+<!-- Section 1 About Us-->
+	<div class="section" id="section1">
+        <div class="containter">
+            <div class="row">
+                <div class="col-xs-3 col-md-6">
+                    <img class="img-responsive hidden-xs" src="img/qaImac.jpg">
+                </div>
+                
+                <div class="col-md-5 pull-left hidden-xs" id="aboutUs">   
+                    <h1>About Us<hr></h1>
+                    
+                    <h2>Something Interesting</h2>
+                    <p>Qualia is a ground-breaking digital technology and research project, which aims to revolutionize the way audience experiences at arts and culture events are evaluated. Incorporating mobile phone apps, information pods and online analytical tools Qualia can significantly enhance your audience evaluation techniques and improve engagement.
+                        
+                        <br><br><button class="btn btn-default buttonAboutUs">Learn More <span class="glyphicon glyphicon-chevron-right"></span></button></p> 
+                    
+                </div>
+                
+                <div class="col-xs-10 col-xs-offset-1 visible-xs aboutUsMobile" id="aboutUsMobile"> 
+                    <img class="img-responsive img-rounded" src="img/qaImacMobile.jpg">
+                    <h1>About Us</h1>
+                    <hr>
+                    <h2>Something Interesting</h2>
+                    <p class="text-justify">Qualia is a ground-breaking digital technology and research project, which aims to revolutionize the way audience experiences at arts and culture events are evaluated. Incorporating mobile phone apps, information pods and online analytical tools Qualia can significantly enhance your audience evaluation techniques and improve engagement.<br><br><button class="btn btn-default buttonAboutUsMobile">Learn More <span class="glyphicon glyphicon-chevron-right"></span></button></p> 
+                    
+                </div>
+            </div><!--/row-->
+        </div><!--/container--> 
+	</div>
+<!--/section 1 -->    
+
+<!--section 2 What We Do-->         
+	<div class="section" id="section2" data-anchor="3rdPage">
+        <div class="container">
+            <div class="row">
+                <div class="slide">
+                    <div class="intro">
+                        <div class="" id="productPage">
+                            <!--Product 1 -->
+                            <div class="col-md-4 hidden-sm hidden-xs">
+                                <img class="img-responsive" alt="image" src="img/qaGraph.png">
+                                <h1 class="text-center">Product</h1>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce fringilla ultricies feugiat. Donec condimentum, orci ac aliquam ultricies, libero dui sagittis ante.</p>
+                                <button class="btn btn-link">Learn More...</button>
+                            </div>
+                            <!--/Product 1 -->
+                        
+                            <div class="col-md-4 hidden-sm hidden-xs">
+                                <img class="img-responsive" alt="image" src="img/qaGraph.png">
+                                <h1 class="text-center">Product</h1>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce fringilla ultricies feugiat. Donec condimentum, orci ac aliquam ultricies, libero dui sagittis ante.</p>
+                                <button class="btn btn-link">Learn More...</button>
+                            
+                            </div>
+                            
+                            <div class="col-md-4 hidden-sm hidden-xs">
+                                <img class="img-responsive" alt="image" src="img/qaGraph.png">
+                                <h1 class="text-center">Product</h1>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce fringilla ultricies feugiat. Donec condimentum, orci ac aliquam ultricies, libero dui sagittis ante.</p>
+                                <button class="btn btn-link">Learn More...</button>
+                            
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+         
+     
+<!--/What We Do --> 
+<!--Products-->        
+	    <div class="container">
+            <div class="row">
+                <div class="slide">
+                    <div class="intro">
+                        <div class="" id="productPage">
+                            <div class="col-md-4 hidden-sm hidden-xs">
+                                <img class="img-responsive" alt="image" src="img/qaGraph.png">
+                                <h1 class="text-center">Product</h1>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce fringilla ultricies feugiat. Donec condimentum, orci ac aliquam ultricies, libero dui sagittis ante.</p>
+                                <button class="btn btn-link">Learn More...</button>
+                            </div>
+                            
+                            <div class="col-md-4 hidden-sm hidden-xs">
+                                <img class="img-responsive" alt="image" src="img/qaGraph.png">
+                                <h1 class="text-center">Product</h1>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce fringilla ultricies feugiat. Donec condimentum, orci ac aliquam ultricies, libero dui sagittis ante.</p>
+                                <button class="btn btn-link">Learn More...</button>
+                            </div>
+                            
+                            <div class="col-md-4 hidden-sm hidden-xs">
+                                <img class="img-responsive" alt="image" src="img/qaGraph.png">
+                                <h1 class="text-center">Product</h1>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce fringilla ultricies feugiat. Donec condimentum, orci ac aliquam ultricies, libero dui sagittis ante.</p>
+                                <button class="btn btn-link">Learn More...</button>
+                            
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+     </div>	    
+</div>
+
+<!--/section-->   
+    
+<!--section 3 Contact Us-->        
+	<div class="section" id="section3" data-anchor="4thpage">
+        <div class="container">
+            <div class="row">
+                    <div class="col-md-8"  id="contactUs">
+                        <h1>Contact Us</h1>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce fringilla ultricies feugiat. Donec condimentum, orci ac aliquam ultricies, libero dui sagittis ante. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce fringilla ultricies feugiat. </p>
+                                
+                                <label for="exampleInputName1"><h2>Name:</h2></label>
+                                <input type="Name" class="form-control input-lg" id="exampleInputName1" placeholder="Enter Your Name">
+                                
+                        
+                                <label for="exampleInputEmail1"><h2>Email address:</h2></label>
+                                <input type="email" class="form-control input-lg" id="exampleInputEmail1" placeholder="Enter email">
+                                <label for="exampleInputName1"><h2>Phone Number:</h2></label>
+                                <input type="Phone Number" class="form-control input-lg" id="exampleInputNumber1" placeholder="Enter Phone Number">
+                                <h2>Message</h2>
+                                <textarea class="form-control input-lg" rows="3"></textarea>
+                                
+                        
+                              
+                    </div>
+                    
+                    <div clas="col-md-3 col-md-offset-9 pull-left contactUsSpacing" id="contactUs">
+                        <h2>Visit Us:</h2>
+                        <br>
+                        <h4>15809 NE Cherry Drive</h4>
+                        <h4>Longan, England 123459</h4>
+                        
+                        <br>
+                        <h2>Talk With Us:</h2>
+                        <br>
+                        <h4><span class="glyphicon glyphicon-earphone"></span> Phone: 1-800-123-1234</span></h4>
+                        <h4><span class="glyphicon glyphicon-earphone"></span> Fax: 1-800-123-1234</span></h4>
+                        
+                        <br>
+                        <h2>Email Us:</h2>
+                        <br>
+                        <h4><span class="glyphicon glyphicon-envelope"></span> Email: <a href="">info@QaulianAnalytics.com</a></h4>
+                        <br>
+                        <h2>Follow Us:</h2>
+                        <br>
+                        <ul class="socialIcons">
+                            <li><a href="#0"><img src="img/qaFacebook.png"></a></li>
+                            <li><a href="#0"><img src="img/qaTwitter.png"></a></li>
+                            <li><a href="#0"><img src="img/qaYouTube.png"></a></li>
+                        </ul>
+                        
+                    </div>
+               
+            </div>
+	   </div>
+    </div>
+<!--/section-->        
+</div>
+
+
+</body>
+</html>
