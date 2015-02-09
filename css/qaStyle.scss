@@ -872,5 +872,11 @@ html, body {
 
 }
 
+@media all and (max-width: 767px) { 
+	.cd-secondary-nav menu {
+		display: none;
+	}
+}
+
 
 
