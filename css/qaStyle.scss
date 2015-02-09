@@ -57,8 +57,6 @@ $copyFontSize: 13px;
 
 //Mixins
 
-//reset 
-@import "reset";
 
 /* -------------------------------- 
 Primary style
@@ -260,16 +258,26 @@ p {
 
 #productPage { 
 	h1 {
-        font-size: $titleFontSize*2.5;
+        font-size: $titleFontSize*1.8;
         color: $myGreen;
         padding-top: 15px;
+        margin: 0 auto;
     }
 
     p {
-	color: $myWhite; 
-  	font-size: $paraFontSize; 
-	font-family: 'Arimo', sans-serif;
-    padding-left: 50px;
+	       color: $myWhite; 
+  	     font-size: $paraFontSize * 1.0; 
+	       font-family: 'Arimo', sans-serif;
+         font-weight: 200;
+         padding: 15px 15px 15px 15px;
+         margin: 0 auto;
+    }
+
+  .divBlackBackground {
+      background-color: rgba($myBlack, 0.7);
+      padding: 25px 1px 25px 1px;
+      border-radius: 20px;
+
     }
 
     button {
@@ -277,19 +285,25 @@ p {
     padding-left: 52px;
 }
     img {
-    opacity: .65;
     transition: 1s;
-    height: 350px;
-    width: 350px;
-    
+    height: 275px;
+    width: 275px;
+    margin: 0 auto;
 }
     img:hover {
-     height: 350px;
-     width: 350px;
+     height: 275px;
+     width: 275px;
+     margin: 0 auto;
      opacity: 1;
      transition: 1s;
     
     }
+
+    // div {
+    //   background-color: $myBlack;
+    //   margin: 0 auto;
+    //   padding; 5px;
+    // }
 
 }
 
@@ -395,13 +409,13 @@ p {
 	background-size: cover;
  }
  #section0{
-	background-image: url('../img/qauliaAnalyticsBackground_1.jpg');
+	background-image: url('../img/qauliaAnalyticsBackground_1.png');
  }
  #section1{
 	background-image: url();
  }
  #section2{
-	background-image: url('../img/qauliaAnalyticsBackground_2.jpg');
+	background-image: url('../img/qauliaAnalyticsBackground_2.png');
     }
 
  
@@ -874,11 +888,7 @@ html, body {
 
 }
 
-@media all and (max-width: 767px) { 
-	.cd-secondary-nav menu {
-		display: none;
-	}
-}
+
 
 
 
