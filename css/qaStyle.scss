@@ -56,10 +56,12 @@ $navBackground: $myWhite;
 $copyFontSize: 13px;
 
 //Mixins
+
+//reset 
+@import "reset";
+
 /* -------------------------------- 
-
 Primary style
-
 -------------------------------- */
 *, *:after, *:before {
   -webkit-box-sizing: border-box;
