@@ -202,6 +202,7 @@ p {
         color:$myPink;
         font-family: 'Neuton', serif;
         font-size: $titleFontSize *.9;
+        background-color: rgba($myBlack, 0.15);
    
         }    
         
@@ -233,6 +234,7 @@ p {
         color:$myPink;
         font-family: 'Neuton', serif;
         font-size: $titleFontSize *.5;
+        background-color: rgba($myWhite, 0.2);
    
         } 
 
@@ -258,7 +260,7 @@ p {
 
 #productPage { 
 	h1 {
-        font-size: $titleFontSize*1.8;
+        font-size: $titleFontSize*1.6;
         color: $myGreen;
         padding-top: 15px;
         margin: 0 auto;
@@ -299,11 +301,22 @@ p {
     
     }
 
-    // div {
-    //   background-color: $myBlack;
-    //   margin: 0 auto;
-    //   padding; 5px;
-    // }
+    .buttonProducts {
+        color:$myGreen;
+        font-family: 'Neuton', serif;
+        font-size: $titleFontSize *.9;
+        background-color: rgba($myBlack, 1);
+        padding-left: 15px;
+        margin-left: 15px;
+   
+        }
+     .buttonProducts:hover {
+        color:$myGreen;
+        font-family: 'Neuton', serif;
+        font-size: $titleFontSize *.9;
+        background-color: rgba($myWhite, .2);
+   
+        } 
 
 }
 

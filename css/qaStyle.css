@@ -100,7 +100,8 @@ p {
   #aboutUs .buttonAboutUs:hover {
     color: #DE0587;
     font-family: 'Neuton', serif;
-    font-size: 27px; } }
+    font-size: 27px;
+    background-color: rgba(0, 0, 0, 0.15); } }
 
 .aboutUsMobile p {
   font-size: 12px;
@@ -115,7 +116,8 @@ p {
 .aboutUsMobile .buttonAboutUsMobile:hover {
   color: #DE0587;
   font-family: 'Neuton', serif;
-  font-size: 15px; }
+  font-size: 15px;
+  background-color: rgba(255, 255, 255, 0.2); }
 
 #aboutUsMobile h1 {
   font-size: 27px;
@@ -125,7 +127,7 @@ p {
   color: #DE0587; }
 
 #productPage h1 {
-  font-size: 54px;
+  font-size: 48px;
   color: #A9C736;
   padding-top: 15px;
   margin: 0 auto; }
@@ -154,6 +156,18 @@ p {
   margin: 0 auto;
   opacity: 1;
   transition: 1s; }
+#productPage .buttonProducts {
+  color: #A9C736;
+  font-family: 'Neuton', serif;
+  font-size: 27px;
+  background-color: black;
+  padding-left: 15px;
+  margin-left: 15px; }
+#productPage .buttonProducts:hover {
+  color: #A9C736;
+  font-family: 'Neuton', serif;
+  font-size: 27px;
+  background-color: rgba(255, 255, 255, 0.2); }
 
 .productPicMobileDiv {
   left: 15%;
