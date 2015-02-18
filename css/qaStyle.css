@@ -672,4 +672,48 @@ html, body {
     background-color: rgba(255, 255, 255, 0);
     padding: 0px; }
 
+.nav-background-color {
+  background-color: rgba(255, 255, 255, 0.5); }
+
+.divider-aboutUs {
+  height: 50px; }
+
+.section-aboutUs {
+  height: 500px;
+  padding-top: 130px;
+  padding-bottom: 50px;
+  overflow: auto; }
+
+.bg-1-aboutUs {
+  background: url("../img/qaBackgroundAboutUs.png") no-repeat center center fixed;
+  color: #ffffff;
+  background-size: cover; }
+
+.bg-2 {
+  background: url("/assets/example/bg_suburb.jpg") no-repeat top center fixed;
+  color: #ffffff;
+  background-size: cover; }
+
+.bg-3 {
+  background: url("/assets/example/bg_blueplane.jpg") no-repeat bottom center fixed;
+  color: #ffffff;
+  background-size: cover; }
+
+#footer {
+  height: 60px;
+  background-color: #00A3DE;
+  margin-top: 50px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  margin-bottom: 0px; }
+  #footer a {
+    color: #555555; }
+
+#aboutUs-page h1 {
+  font-size: 117px;
+  color: #DE0587; }
+#aboutUs-page h2 {
+  font-size: 39px;
+  color: #DE0587; }
+
 /*# sourceMappingURL=qaStyle.css.map */

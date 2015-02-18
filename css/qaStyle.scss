@@ -901,6 +901,68 @@ html, body {
 
 }
 
+//About Us Page
+.nav-background-color {
+  background-color: rgba($myWhite,.5);
+}
+
+.divider-aboutUs {
+    height:50px;
+}
+
+.section-aboutUs {
+    height:500px;
+    padding-top:130px;
+    padding-bottom:50px;
+    overflow:auto;
+}
+
+.bg-1-aboutUs {
+  background: url('../img/qaBackgroundAboutUs.png') no-repeat center center fixed;
+    color:$myWhite;
+    background-size:cover;
+}
+  
+.bg-2 {
+  background: url('/assets/example/bg_suburb.jpg') no-repeat top center fixed;
+    color:$myWhite;
+    background-size:cover;
+}
+
+.bg-3 {
+  background: url('/assets/example/bg_blueplane.jpg') no-repeat bottom center fixed;
+    color:$myWhite;
+    background-size:cover;
+}
+
+#footer {
+    height: 60px;
+    background-color:$myBlue;
+    margin-top:50px;
+    padding-top:20px;
+    padding-bottom:20px;
+    margin-bottom: 0px;
+
+    a {
+  color:$myGray;
+        }
+}
+
+
+#aboutUs-page {
+
+  h1 {
+        font-size: $titleFontSize*3.9;
+        color: $myPink;
+    }
+
+    h2 {
+        font-size: $titleFontSize*1.3;
+        color: $myPink;
+    }
+
+}
+
 
 
 
