@@ -9,13 +9,12 @@ Primary style
 
 body {
   overflow: hidden;
-  font-size: 100%;
   font-family: 'Josefin Sans', sans-serif;
   color: rgba(0, 163, 222, 0.9);
-  background-color: #ffffff; }
+  background-color: transparent; }
   body h1 {
     color: #00A3DE;
-    font-size: 30px;
+    /*font-size: 30px;*/
     font-family: 'Josefin Sans', sans-serif; }
   body h2 {
     color: #00A3DE;
@@ -458,7 +457,7 @@ html, body {
 @media only screen and (min-width: 768px) {
   .cd-primary-nav-trigger {
     width: 100px;
-    padding-left: 1em;
+    padding-right: 1em;
     background-color: transparent;
     height: 30px;
     line-height: 30px;
