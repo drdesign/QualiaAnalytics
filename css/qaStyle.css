@@ -9,12 +9,13 @@ Primary style
 
 body {
   overflow: hidden;
+  font-size: 100%;
   font-family: 'Josefin Sans', sans-serif;
   color: rgba(0, 163, 222, 0.9);
-  background-color: transparent; }
+  background-color: #ffffff; }
   body h1 {
     color: #00A3DE;
-    /*font-size: 30px;*/
+    font-size: 30px;
     font-family: 'Josefin Sans', sans-serif; }
   body h2 {
     color: #00A3DE;
@@ -84,10 +85,12 @@ p {
   top: 250px;
   position: relative;
   font-size: 39px;
-  color: #DE0587; }
+  color: #DE0587;
+  text-align: left; }
 #aboutUs p {
   top: 250px;
-  position: relative; }
+  position: relative;
+  text-align: left; }
 @media only screen and (min-width: 768px) {
   #aboutUs p {
     padding-bottom: 20px;
@@ -457,7 +460,7 @@ html, body {
 @media only screen and (min-width: 768px) {
   .cd-primary-nav-trigger {
     width: 100px;
-    padding-right: 1em;
+    padding-left: 1em;
     background-color: transparent;
     height: 30px;
     line-height: 30px;
@@ -703,8 +706,7 @@ html, body {
   background-color: #00A3DE;
   margin-top: 50px;
   padding-top: 20px;
-  padding-bottom: 20px;
-  margin-bottom: 0px; }
+  padding-bottom: 20px; }
   #footer a {
     color: #555555; }
 
