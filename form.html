@@ -15,6 +15,7 @@ QA: Contact Us Form
 <link href="css/structure.css" rel="stylesheet">
 <link href="css/form.css" rel="stylesheet">
 
+<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
 <link rel="stylesheet" type="text/css" href="css/qaStyle.css">
 
 <!-- JavaScript -->
@@ -43,7 +44,7 @@ QA: Contact Us Form
 	<label class="desc" id="title6" for="Field6">Name:</label>
 
 		<div>
-			<input id="Field6" name="Field6" type="text" class="field text medium" value="" maxlength="255" tabindex="1" onkeyup=""       />
+			<input id="Field6" name="Field6" type="text" class="field text medium inputStyle input-md" value="" maxlength="255" tabindex="1" onkeyup=""   placeholder="  Enter Your Name"    />
 		</div>
 	</li>
 
@@ -51,14 +52,14 @@ QA: Contact Us Form
 		<label class="desc" id="title2" for="Field2">Email Address:</label>
 	
 	<div>
-		<input id="Field2" name="Field2" type="email" spellcheck="false" class="field text medium" value="" maxlength="255" tabindex="2"       />
+		<input id="Field2" name="Field2" type="email" spellcheck="false" class="field text medium inputStyle input-md" value="" maxlength="255" tabindex="2"  placeholder="  john@yourcompany.com"     />
 	</div>
 	</li>
 
 	<li id="foli3" class="notranslate      ">
 		<label class="desc" id="title3" for="Field3">Phone Number:</label>
 	<div>
-		<input id="Field3" class="field text medium" name="Field3" tabindex="3" type="tel" maxlength="255" value="" />
+		<input id="Field3" class="field text medium inputStyle input-md" name="Field3" tabindex="3" type="tel" maxlength="255" value="" placeholder=" Phone Number"/>
 	</div>
 	</li>
 
@@ -66,7 +67,7 @@ QA: Contact Us Form
 	<label class="desc" id="title4" for="Field4">Organisation</label>
 
 	<div>
-	<input id="Field4" name="Field4" type="text" class="field text medium" value="" maxlength="255" tabindex="4" onkeyup=""       />
+	<input id="Field4" name="Field4" type="text" class="field text medium inputStyle input-md" value="" maxlength="255" tabindex="4" onkeyup=""  placeholder=" Your Organization"     />
 	</div>
 
 	</li>
@@ -76,7 +77,7 @@ QA: Contact Us Form
 <div>
 <textarea id="Field1"
 name="Field1"
-class="field textarea small"
+class="field textarea small inputStyle input-md"
 spellcheck="true"
 rows="10" cols="50"
 tabindex="5"
@@ -84,12 +85,12 @@ onkeyup=""
        ></textarea>
 
 </div>
-</li> <li class="buttons ">
-<div>
+</li> <li class="">
+<div class="buttonPosition">
+	<input id="saveForm" name="saveForm" class="btn btn-default"
+    type="submit" value="Submit"/>
+</div>
 
-                    <input id="saveForm" name="saveForm" class="btTxt submit"
-    type="submit" value="Submit"
- /></div>
 </li>
 
 <li class="hide">
@@ -105,7 +106,7 @@ onkeyup=""
 </div><!--Header-->
 <a class="powertiny" href="http://www.wufoo.com/" title="Powered by Wufoo"
 style="display:block !important;visibility:visible !important;text-indent:0 !important;position:relative !important;height:auto !important;width:95px !important;overflow:visible !important;text-decoration:none;cursor:pointer !important;margin:0 auto !important">
-<span style="background:url(./images/powerlogo.png) no-repeat center 7px; margin:0 auto;display:inline-block !important;visibility:visible !important;text-indent:-9000px !important;position:static !important;overflow: auto !important;width:62px !important;height:30px !important"></span>
-<b style="display:block !important;visibility:hidden !important;text-indent:0 !important;position:static !important;height:auto !important;width:auto !important;overflow: auto !important;font-weight:normal;font-size:9px;color:transparent;padding:0 0 0 3px;"></b>
-</a></body>
+<!-- <span style="background:url(./images/powerlogo.png) no-repeat center 7px; margin:0 auto;display:inline-block !important;visibility:visible !important;text-indent:-9000px !important;position:static !important;overflow: auto !important;width:62px !important;height:30px !important"></span> -->
+<!-- <b style="display:block !important;visibility:hidden !important;text-indent:0 !important;position:static !important;height:auto !important;width:auto !important;overflow: auto !important;font-weight:normal;font-size:9px;color:transparent;padding:0 0 0 3px;"></b>
+</a> --></body>
 </html>
