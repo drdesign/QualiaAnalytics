@@ -1,8 +1,6 @@
 /* Style */
 /* -------------------------------- 
-
 Primary style
-
 -------------------------------- */
 *, *:after, *:before {
   -webkit-box-sizing: border-box;
@@ -11,10 +9,9 @@ Primary style
 
 body {
   overflow: hidden;
-  font-size: 100%;
   font-family: 'Josefin Sans', sans-serif;
   color: rgba(0, 163, 222, 0.9);
-  background-color: #ffffff; }
+  background-color: transparent; }
   body h1 {
     color: #00A3DE;
     font-size: 30px;
@@ -23,6 +20,8 @@ body {
     color: #00A3DE;
     font-size: 25px;
     font-family: 'Josefin Sans', sans-serif; }
+  body input {
+    line-height: 2.3; }
 
 body.overflow-hidden {
   /* when primary navigation is visible, the content in the background won't scroll */
@@ -37,13 +36,15 @@ p {
   font-size: 16px;
   font-family: 'Arimo', sans-serif; }
 
+.fixed {
+  position: fixed;
+  bottom: 15px; }
+
 #homePage h1 {
   color: #ffffff;
   font-size: 30px;
   padding: 60px 60px 60px 60px;
   font-family: 'Arimo', sans-serif;
-  top: 68%;
-  position: fixed;
   background-color: rgba(0, 0, 0, 0.5);
   padding: 60px 60px 60px 60px; }
 #homePage h2 {
@@ -87,10 +88,12 @@ p {
   top: 250px;
   position: relative;
   font-size: 39px;
-  color: #DE0587; }
+  color: #DE0587;
+  text-align: left; }
 #aboutUs p {
   top: 250px;
-  position: relative; }
+  position: relative;
+  text-align: left; }
 @media only screen and (min-width: 768px) {
   #aboutUs p {
     padding-bottom: 20px;
@@ -102,7 +105,8 @@ p {
   #aboutUs .buttonAboutUs:hover {
     color: #DE0587;
     font-family: 'Neuton', serif;
-    font-size: 27px; } }
+    font-size: 27px;
+    background-color: rgba(0, 0, 0, 0.15); } }
 
 .aboutUsMobile p {
   font-size: 12px;
@@ -117,7 +121,8 @@ p {
 .aboutUsMobile .buttonAboutUsMobile:hover {
   color: #DE0587;
   font-family: 'Neuton', serif;
-  font-size: 15px; }
+  font-size: 15px;
+  background-color: rgba(255, 255, 255, 0.2); }
 
 #aboutUsMobile h1 {
   font-size: 27px;
@@ -127,27 +132,47 @@ p {
   color: #DE0587; }
 
 #productPage h1 {
-  font-size: 75px;
+  font-size: 48px;
   color: #A9C736;
-  padding-top: 15px; }
+  padding-top: 15px;
+  margin: 0 auto; }
 #productPage p {
   color: #ffffff;
   font-size: 16px;
   font-family: 'Arimo', sans-serif;
-  padding-left: 50px; }
+  font-weight: 200;
+  padding: 15px 15px 15px 15px;
+  margin: 0 auto; }
+#productPage .divBlackBackground {
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 25px 1px 25px 1px;
+  border-radius: 20px; }
 #productPage button {
   color: #A9C736;
   padding-left: 52px; }
 #productPage img {
-  opacity: .65;
   transition: 1s;
-  height: 350px;
-  width: 350px; }
+  height: 275px;
+  width: 275px;
+  margin: 0 auto; }
 #productPage img:hover {
-  height: 350px;
-  width: 350px;
+  height: 275px;
+  width: 275px;
+  margin: 0 auto;
   opacity: 1;
   transition: 1s; }
+#productPage .buttonProducts {
+  color: #A9C736;
+  font-family: 'Neuton', serif;
+  font-size: 27px;
+  background-color: black;
+  padding-left: 15px;
+  margin-left: 15px; }
+#productPage .buttonProducts:hover {
+  color: #A9C736;
+  font-family: 'Neuton', serif;
+  font-size: 27px;
+  background-color: rgba(255, 255, 255, 0.2); }
 
 .productPicMobileDiv {
   left: 15%;
@@ -158,38 +183,54 @@ p {
   background: url("../img/qaGraphMobile.png") no-repeat; }
 
 #contactUs div {
-  top: 55px;
+  paddin-top: 100px;
+  height: 100%;
   position: absolute; }
 #contactUs h1 {
   font-size: 90px;
   font-family: 'Arimo', sans-serif;
   color: #EF5923;
-  padding-top: 15px; }
+  padding-top: 5px;
+  margin-top: 12px;
+  margin-bottom: -20px; }
 #contactUs h2 {
-  font-size: 45px;
+  font-size: 30px;
   font-family: 'Arimo', sans-serif;
   color: #EF5923;
-  padding: 15px 0px 15px 0px; }
+  padding: 0px 0px 0px 0px;
+  margin-top: 12px;
+  margin-bottom: -20px; }
 #contactUs h3 {
   font-size: 22.5px;
   color: #ffffff;
-  padding: 10px 0px 10px 0px; }
+  padding: 0px 0px 0px 0px; }
 #contactUs h4 {
   font-size: 22.5px;
-  color: #ffffff;
+  color: #555555;
   padding: 0px 0px 0px 0px; }
 #contactUs .sideBar {
   font-size: 15px;
   color: #ffffff; }
 #contactUs p {
-  color: #ffffff; }
+  color: #555555; }
+#contactUs a {
+  color: #555555; }
 #contactUs a:hover {
-  color: #ffffff;
+  color: #EF5923;
   text-decoration: none; }
 #contactUs ul li {
   float: left;
   display: inline-block;
   vertical-align: top; }
+#contactUs .liColor img {
+  background-color: #555555;
+  border-radius: 3px;
+  margin: 3px 3px 3px 0px;
+  padding: 2px 2px 2px 2px;
+  -webkit-transition: .2s; }
+#contactUs .liColor a:hover img:hover {
+  background-color: #EF5923;
+  -webkit-transition: .2s; }
 
 .content p {
   padding: 25px;
@@ -216,13 +257,13 @@ p {
   background-size: cover; }
 
 #section0 {
-  background-image: url("../img/qauliaAnalyticsBackground_1.jpg"); }
+  background-image: url("../img/qauliaAnalyticsBackground_1.png"); }
 
 #section1 {
   background-image: url(); }
 
 #section2 {
-  background-image: url("../img/qauliaAnalyticsBackground_2.jpg"); }
+  background-image: url("../img/qauliaAnalyticsBackground_2.png"); }
 
 #section3 {
   background-image: url(); }
@@ -469,7 +510,7 @@ html, body {
   top: 0;
   height: 100%;
   width: 100%;
-  background: rgba(239, 89, 35, 0.9);
+  background: rgba(239, 89, 35, 0.95);
   z-index: 2;
   text-align: center;
   padding: 50px 0;
@@ -506,11 +547,18 @@ html, body {
   border-radius: 0.25em;
   -webkit-transition: background 0.2s;
   -moz-transition: background 0.2s;
-  transition: background 0.2s; }
+  transition: background 0.2s;
+  text-decoration: none; }
 
 .no-touch .cd-primary-nav a:hover {
   background-color: #ffffff;
   text-decoration: none; }
+
+.cd-background-color-nav a:hover {
+  background-color: #ffffff;
+  -webkit-transition: background 0.2s;
+  -moz-transition: background 0.2s;
+  transition: background 0.2s; }
 
 .cd-primary-nav .cd-label {
   color: #555555;
@@ -534,6 +582,9 @@ html, body {
   overflow: hidden;
   text-indent: 100%;
   white-space: nowrap; }
+
+.cd-social a:hover {
+  background-color: #ffffff; }
 
 .cd-primary-nav .cd-facebook a {
   background-position: 0 0; }
@@ -651,5 +702,75 @@ html, body {
     color: #ffffff;
     background-color: rgba(255, 255, 255, 0);
     padding: 0px; }
+
+.nav-background-color {
+  background-color: rgba(255, 255, 255, 0.5); }
+
+.divider-aboutUs {
+  height: 50px; }
+
+.section-aboutUs {
+  height: 500px;
+  padding-top: 130px;
+  padding-bottom: 50px;
+  overflow: auto; }
+
+.bg-1-aboutUs {
+  background: url("../img/qaBackgroundAboutUs.png") no-repeat center center fixed;
+  color: #ffffff;
+  background-size: cover; }
+
+.bg-2 {
+  background: url("/assets/example/bg_suburb.jpg") no-repeat top center fixed;
+  color: #ffffff;
+  background-size: cover; }
+
+.bg-3 {
+  background: url("/assets/example/bg_blueplane.jpg") no-repeat bottom center fixed;
+  color: #ffffff;
+  background-size: cover; }
+
+#footer {
+  height: 60px;
+  background-color: #00A3DE;
+  margin-top: 50px;
+  padding-top: 20px;
+  padding-bottom: 20px; }
+  #footer a {
+    color: #555555; }
+
+#aboutUs-page h1 {
+  font-size: 117px;
+  color: #DE0587; }
+#aboutUs-page h2 {
+  font-size: 39px;
+  color: #DE0587; }
+
+#form {
+  width: 600px;
+  height: 900px;
+  overflow: visible;
+  margin-top: 50px; }
+
+.divForm {
+  display: inline-block;
+  width: 60%;
+  height: 100%; }
+
+.contactUsRight {
+  display: inline-block;
+  width: 40%;
+  position: absolute;
+  top: 187px; }
+
+.inputStyle {
+  width: 500px;
+  border-radius: 5px; }
+
+.buttonPosition {
+  margin-top: 76px; }
+
+.resizeNone {
+  resize: none; }
 
 /*# sourceMappingURL=qaStyle.css.map */

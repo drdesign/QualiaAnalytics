@@ -9,11 +9,14 @@
 	<meta name="keywords"  content=""/>
 	<meta name="Resource-type" content="Document" />
 
-	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
-	<link rel="stylesheet" type="text/css" href="css/jquery.fullPage.css" />
+	
+    <link rel="stylesheet" type="text/css" href="css/form.css"/>
+    <link rel="stylesheet" type="text/css" href="css/structure.css"/>
+    <link rel="stylesheet" type="text/css" href="css/theme.css"/> 
+    <link rel="stylesheet" type="text/css" href="css/jquery.fullPage.css" />
     <link rel="stylesheet" type="text/css" href="css/reset.css"/>
-    <link rel="stylesheet" type="text/css" href="css/style.css"/>
-    <link rel="stylesheet" type="text/css" href="css/loadie.css"/>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" /> 
+
 	
 	<!--Style-->
 	<link rel="stylesheet" type="text/css" href="css/qaStyle.css">
@@ -38,12 +41,11 @@
     <script type="text/javascript" src="js/jquery.slimscroll.min.js"></script>
 	<script type="text/javascript" src="js/jquery.fullPage.min.js"></script>
 	<script type="text/javascript" src="js/less.min.js"></script>
-    <script type="text/javascript" src="js/jquery.loadie.min.js"></script>
-    <script>$('body').loadie(); // Change the wrapper if wanted.</script>
+
 	<script type="text/javascript">
 		$(document).ready(function() {
 			$('#fullpage').fullpage({
-				sectionsColor: ['#555555', '#ffffff', '#111111', '#333333', '#ccddff'],
+				sectionsColor: ['#555555', '#ffffff', '#111111', '#ffffff', '#ffffff'],
 				anchors: ['firstPage', 'secondPage', '3rdPage', '4thpage', 'lastPage'],
 				menu: '#menu',
 				verticalCentered: true,
@@ -61,9 +63,11 @@
   
 			});
         });
-   
-	</script>
 
+       
+            // document.getElementById('homePage').className += ' ' + 'fixed';
+    
+	</script>
 </head>
 <body>
 
@@ -86,7 +90,7 @@
 </header>   
 
 <nav>
-	<ul class="cd-primary-nav">
+	<ul class="cd-primary-nav cd-background-color-nav ">
 		<li class="cd-label">About us</li>
 		<li><a href="#0">The team</a></li>
 		<li><a href="#0">Our services</a></li>
@@ -95,10 +99,10 @@
         <li><a href="#0">Start A Project</a></li>
         <li><a href="#0">Consulting</a></li>
         <li class="cd-label">Follow Us</li>
-        <li class="cd-social cd-facebook"><a href="#0">Facebook</a></li>
+<!--         <li class="cd-social cd-facebook"><a href="#0">Facebook</a></li>
         <li class="cd-social cd-instagram"><a href="#0">Instagram</a></li>
-        <li class="cd-social cd-dribbble"><a href="#0">Dribbble</a></li>
-        <li class="cd-social cd-twitter"><a href="#0">Twitter</a></li>
+        <li class="cd-social cd-dribbble"><a href="#0">Dribbble</a></li> -->
+        <li class="cd-social cd-twitter"><a href="https://twitter.com/QualiaAnalytics">Twitter</a></li>
 		<li id="copyright">&copy;Qaulia Analytics</li>
         <li id="copyright">Website by Danniel Rolfe | <a href="http://www.dannielrolfe.com">www.dannielrolfe.com</a></li>
 	</ul>
@@ -107,11 +111,11 @@
 <div id="fullpage" class="fullpage-wrapper">	
     
 <!-- Section 0 Home-->
-	<div class="section homeBackground" id="section0">
+	<div class="section " id="section0">
         <div class="containter">
             <div class="row">
                 <div class="col-md-12">
-                    <div class="text-center hidden-xs" id="homePage">
+                    <div class="text-center hidden-xs fixed" id="homePage">
                     <h1>Whether you run a <span class="funFonts">business</span>, manage a <span class="funFonts">non-profit</span> or work in the <span class="funFonts">public sector</span>, Qualia Analytics offers technology-enhanced research solutions to help you understand your <span class="funFonts">customers, audiences</span> and <span class="funFonts">service users.</span> 
 
 <hr>
@@ -146,7 +150,7 @@ Better research will give you better outcomes.
                     <h2>Technology-enhanced Research</h2>
                     <p>Qualia Analytics revolves around technology-enhanced research. We aim to revolutionize the way experiences with your visitors or customers are evaluated, by incorporating online analytical tools, information pods and mobile phone apps. We can significantly enhance your evaluation techniques and ultimately improve engagement with your organization. 
                         
-                        <br><br><button class="btn btn-default buttonAboutUs">Learn More <span class="glyphicon glyphicon-chevron-right"></span></button></p> 
+                        <!-- <br><br><a class="btn btn-default buttonAboutUs" type="button" href="aboutUs.html">Learn More <span class="glyphicon glyphicon-chevron-right"></span></a></p>  -->
                     
                 </div>
                 
@@ -163,7 +167,7 @@ Better research will give you better outcomes.
 	</div>
 <!--/section 1 -->    
 
-<!--section 2 What We Do-->         
+<!--Products "What We Do"-->          
 	<div class="section" id="section2" data-anchor="3rdPage">
         <div class="container">
             <div class="row">
@@ -172,27 +176,31 @@ Better research will give you better outcomes.
                         <div class="" id="productPage">
                             <!--Product 1 -->
                             <div class="col-md-4 hidden-sm hidden-xs">
-                                <img class="img-responsive" alt="image" src="img/qaGraph.png">
-                                <h1 class="text-center">Survey Design</h1>
-                                <p>“We evaluate and develop survey questions to gather accurate data.”</p>
-                                <button class="btn btn-link">Learn More...</button>
+                                <div class="divBlackBackground">
+                                    <img class="img-responsive" alt="image" src="img/iconSurveyDesignQA.png">
+                                    <h1 class="text-center">Survey Design</h1>
+                                    <p>We evaluate and develop survey questions to gather accurate data.</p>
+                                    <button class="btn btn-default buttonProducts">Learn More <span class="glyphicon glyphicon-chevron-right"></button>
+                                </div>    
                             </div>
                             <!--/Product 1 -->
                         
                             <div class="col-md-4 hidden-sm hidden-xs">
-                                <img class="img-responsive" alt="image" src="img/qaGraph.png">
-                                <h1 class="text-center">Data Collection</h1>
-                                <p>“We implement data collection with latest technologies of social research based on your organization’s needs.”</p>
-                                <button class="btn btn-link">Learn More...</button>
-                            
+                                <div class="divBlackBackground">
+                                    <img class="img-responsive" alt="image" src="img/iconDataCollectionQA.png">
+                                    <h1 class="text-center">Data Collection</h1>
+                                    <p>We implement data collection with latest technologies of social research based on your organization’s needs.</p>
+                                    <button class="btn btn-default buttonProducts">Learn More <span class="glyphicon glyphicon-chevron-right"></button>
+                                </div>    
                             </div>
                             
                             <div class="col-md-4 hidden-sm hidden-xs">
-                                <img class="img-responsive" alt="image" src="img/qaGraph.png">
-                                <h1 class="text-center">Data Managment</h1>
-                                <p>“We set up robust systems to keep your data organised and error-free.”</p>
-                                <button class="btn btn-link">Learn More...</button>
-                            
+                                <div class="divBlackBackground"> 
+                                    <img class="img-responsive" alt="image" src="img/iconDataManagement.png">
+                                    <h1 class="text-center">Data Managment</h1>
+                                    <p>We set up robust systems to keep your data organised and error-free.</p>
+                                    <button class="btn btn-default buttonProducts">Learn More <span class="glyphicon glyphicon-chevron-right"></button>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -200,33 +208,38 @@ Better research will give you better outcomes.
             </div>
          
      
-<!--/What We Do --> 
-<!--Products-->        
+
+<!--Products continue-->        
 	    <div class="container">
             <div class="row">
                 <div class="slide">
                     <div class="intro">
                         <div class="" id="productPage">
                             <div class="col-md-4 hidden-sm hidden-xs">
-                                <img class="img-responsive" alt="image" src="img/qaGraph.png">
+                                <div class="divBlackBackground"> 
+                                <img class="img-responsive" alt="image" src="img/iconDataAnalysis.png">
                                 <h1 class="text-center">Data Analysis</h1>
-                                <p>“We provide effective means of analysing and interpreting your data.”</p>
-                                <button class="btn btn-link">Learn More...</button>
+                                <p>We provide effective means of analysing and interpreting your data.</p>
+                                <button class="btn btn-default buttonProducts">Learn More <span class="glyphicon glyphicon-chevron-right"></button>
+                            </div>
                             </div>
                             
                             <div class="col-md-4 hidden-sm hidden-xs">
-                                <img class="img-responsive" alt="image" src="img/qaGraph.png">
-                                <h1 class="text-center">Training</h1>
-                                <p>“To ensure you can get the most out of your data, we offer a range of standard and custom training workshops and tutorial options.”</p>
-                                <button class="btn btn-link">Learn More...</button>
+                                <div class="divBlackBackground"> 
+                                    <img class="img-responsive" alt="image" src="img/iconReporting.png">
+                                    <h1 class="text-center">Reporting</h1>
+                                    <p>We offer high quality reports that can be delivered either one time or at regular intervals. We can also offer different levels of depth in our reports depending on your organization's needs.</p>
+                                    <button class="btn btn-default buttonProducts">Learn More <span class="glyphicon glyphicon-chevron-right"></button>
+                                </div>
                             </div>
                             
                             <div class="col-md-4 hidden-sm hidden-xs">
-                                <img class="img-responsive" alt="image" src="img/qaGraph.png">
-                                <h1 class="text-center">Product</h1>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce fringilla ultricies feugiat. Donec condimentum, orci ac aliquam ultricies, libero dui sagittis ante.</p>
-                                <button class="btn btn-link">Learn More...</button>
-                            
+                                <div class="divBlackBackground"> 
+                                    <img class="img-responsive" alt="image" src="img/iconTraining.png">
+                                    <h1 class="text-center">Training</h1>
+                                    <p>To ensure you can get the most out of your data, we offer a range of standard and custom training workshops and tutorial options.</p>
+                                    <button class="btn btn-default buttonProducts">Learn More <span class="glyphicon glyphicon-chevron-right"></button>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -237,15 +250,15 @@ Better research will give you better outcomes.
      </div>	    
 </div>
 
-<!--/section-->   
+<!--/products section-->   
     
 <!--section 3 Contact Us-->        
 	<div class="section" id="section3" data-anchor="4thpage">
         <div class="container">
             <div class="row">
-                    <div class="col-md-8"  id="contactUs">
-                        <h1>Contact Us</h1>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce fringilla ultricies feugiat. Donec condimentum, orci ac aliquam ultricies, libero dui sagittis ante. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce fringilla ultricies feugiat. </p>
+                    <!-- <div class="col-md-8"  id="contactUs"> -->
+                        <!-- <h1>Contact Us</h1>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce fringilla ultricies feugiat. Donec condimentum, orci ac aliquam ultricies, libero dui sagittis ante. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce fringilla ultricies feugiat. </p> 
                                 
                                 <label for="exampleInputName1"><h2>Name:</h2></label>
                                 <input type="Name" class="form-control input-lg" id="exampleInputName1" placeholder="Enter Your Name">
@@ -257,37 +270,43 @@ Better research will give you better outcomes.
                                 <input type="Phone Number" class="form-control input-lg" id="exampleInputNumber1" placeholder="Enter Phone Number">
                                 <h2>Message</h2>
                                 <textarea class="form-control input-lg" rows="3"></textarea>
+                                    <!--new form --> 
+                                <div class="divForm" >
+                                   <iframe src="form.html" id="form" frameborder="0" >
+
+                                   </iframe> 
+                                </div>       
                                 
                         
                               
-                    </div>
+                    <!-- </div> -->
                     
-                    <div clas="col-md-3 col-md-offset-9 pull-left contactUsSpacing" id="contactUs">
-                        <h2>Visit Us:</h2>
+                    <!-- <div clas="col-md-3 col-md-offset-9 pull-left contactUsSpacing divContactInfo" id="contactUs"> -->
+                    <div class="contactUsRight" id="contactUs">
+                        <!-- <h2>Headqaurters:</h2>
                         <br>
-                        <h4>15809 NE Cherry Drive</h4>
+                        <h4>67 York Street</h4>
                         <h4>Longan, England 123459</h4>
-                        
-                        <br>
-                        <h2>Talk With Us:</h2>
+                        <br> -->
+                      <!--   <h2>Talk With Us:</h2>
                         <br>
                         <h4><span class="glyphicon glyphicon-earphone"></span> Phone: 1-800-123-1234</span></h4>
-                        <h4><span class="glyphicon glyphicon-earphone"></span> Fax: 1-800-123-1234</span></h4>
+                        <h4><span class="glyphicon glyphicon-earphone"></span> Fax: 1-800-123-1234</span></h4> -->
                         
                         <br>
                         <h2>Email Us:</h2>
                         <br>
-                        <h4><span class="glyphicon glyphicon-envelope"></span> Email: <a href="">info@QaulianAnalytics.com</a></h4>
+                        <h4><span class="glyphicon glyphicon-envelope"></span> Email: <a href="">info@QauliaAnalytics.com</a></h4>
                         <br>
                         <h2>Follow Us:</h2>
                         <br>
-                        <ul class="socialIcons">
-                            <li><a href="#0"><img src="img/qaFacebook.png"></a></li>
-                            <li><a href="#0"><img src="img/qaTwitter.png"></a></li>
-                            <li><a href="#0"><img src="img/qaYouTube.png"></a></li>
+                        <ul class="socialIcons liColor">
+                            <!-- <li><a href="#0"><img src="img/qaFacebook.png"></a></li> -->
+                            <li><a href="https://twitter.com/QualiaAnalytics"><img src="img/qaTwitter.png"></a></li>
+                            <!-- <li><a href="#0"><img src="img/qaYouTube.png"></a></li> -->
                         </ul>
-                        
-                    </div>
+                    </div> 
+                  <!--   </div> -->
                
             </div>
 	   </div>
@@ -295,6 +314,12 @@ Better research will give you better outcomes.
 <!--/section-->        
 </div>
 
+<!-- Form hide -->
+<script> 
+    $("#saveForm").click(function(){ 
+        $(this).hide("#form");
+     })    
+</script>
 
 </body>
 </html>
