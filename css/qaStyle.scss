@@ -69,7 +69,7 @@ Primary style
 
 body {
   overflow: hidden;    
-  font-size: 100%;
+  // font-size: 100%;
   font-family: 'Josefin Sans', sans-serif;
   color: rgba($myBlue, .9);
   background-color: transparent;
@@ -108,16 +108,24 @@ p {
 	font-family: 'Arimo', sans-serif;
 }
 
+  .fixed {
+    position: fixed;
+    bottom: 15px;
+  }
+
 #homePage {
+
+
+
 	h1 {
 		color: $myWhite; 
 		font-size: $subTitleFontSize*1.2; 
 		padding: $titlePadding; 
 		font-family: 'Arimo', sans-serif;
-        top: $copySpacing;
-        position: fixed;
-        background-color: rgba($myBlack, .50);
-        padding: $titlePadding;
+    // top: $copySpacing;
+    // position: fixed;
+    background-color: rgba($myBlack, .50);
+    padding: $titlePadding;
 
 	}
 
@@ -126,9 +134,9 @@ p {
 		font-size: $subTitleFontSize; 
 		padding: $subTitlePadding; 
 		font-family: 'Arimo', sans-serif;
-        position: fixed;
-        background-color: rgba($myBlack, .50);
-        font-size: $mobileTitleFontSize*.75;
+    position: fixed;
+    background-color: rgba($myBlack, .50);
+    font-size: $mobileTitleFontSize*.75;
         }
 
     h3 {
@@ -337,7 +345,8 @@ p {
 
 #contactUs {
     div {
-    top: 55px;
+    paddin-top: 100px;
+    height: 100%;
     position: absolute;
     }
 
@@ -345,25 +354,29 @@ p {
         font-size: $titleFontSize*3.0;
         font-family: 'Arimo', sans-serif;
         color: $myOrange;
-        padding-top: 15px;
+        padding-top: 5px;
+        margin-top: 12px;
+        margin-bottom: -20px;
     }
 
     h2 {
-        font-size: $titleFontSize*3.0;
+        font-size: $titleFontSize*1.0;
         font-family: 'Arimo', sans-serif;
         color: $myOrange;
-        padding: 15px 0px 15px 0px;
+        padding: 0px 0px 0px 0px;
+        margin-top: 12px;
+        margin-bottom: -20px;
     }
 
     h3 {
         font-size: $titleFontSize * 0.75;
         color: $myWhite;
-        padding: 10px 0px 10px 0px;
+        padding: 0px 0px 0px 0px;
     }
 
     h4 {
        font-size: $titleFontSize * 0.75;
-        color: $myWhite;
+        color: $myGray;
         padding: 0px 0px 0px 0px;
 
 }
@@ -375,10 +388,14 @@ p {
     }
 
     p {
-       color: $myWhite;
+       color: $myGray;
 }
+
+    a {
+      color: $myGray;
+    }
     a:hover {
-        color: $myWhite;
+        color: $myOrange;
         text-decoration: none;
     }
 
@@ -386,7 +403,24 @@ p {
         float: left;
         display: inline-block;
         vertical-align: top;
-}
+  }
+
+  .liColor img {
+    background-color: $myGray;
+    border-radius: 3px;
+    margin: 3px 3px 3px 0px;
+    padding: 2px 2px 2px 2px;
+    -webkit-transition: .2s;
+
+  }
+
+  .liColor a:hover img:hover {
+    background-color: $myOrange;
+    -webkit-transition: .2s;
+
+
+  }
+
 
 }
 
@@ -704,7 +738,7 @@ html, body {
   top: 0;
   height: 100%;
   width: 100%;
-  background: rgba($myOrange, 0.9);
+  background: rgba($myOrange, 0.95);
   z-index: 2;
   text-align: center;
   padding: 50px 0;
@@ -742,11 +776,21 @@ html, body {
   -webkit-transition: background 0.2s;
   -moz-transition: background 0.2s;
   transition: background 0.2s;
+  text-decoration: none;
 }
 .no-touch .cd-primary-nav a:hover {
   background-color: $myWhite;
   text-decoration: none;    
 }
+
+.cd-background-color-nav a:hover {
+  background-color: $myWhite;
+  -webkit-transition: background 0.2s;
+  -moz-transition: background 0.2s;
+  transition: background 0.2s;
+
+}
+
 .cd-primary-nav .cd-label {
   color: $myGray;
   text-transform: uppercase;
@@ -769,7 +813,13 @@ html, body {
   overflow: hidden;
   text-indent: 100%;
   white-space: nowrap;
+
 }
+
+.cd-social a:hover {
+  background-color:$myWhite;
+  }
+
 .cd-primary-nav .cd-facebook a {
   background-position: 0 0;
 }
@@ -972,30 +1022,47 @@ html, body {
 
 #form {
     width: 600px;
-    height: 600px;
+    height: 900px;
     overflow: visible;
+    margin-top: 50px
+
 }
 
 .divForm{
-    width: 60%;
+  display: inline-block;
+  width: 60%;
+  height: 100%
+  // background-color: rgba(0, 0, 255, .5);
 
 }
 
-.divContactInfo {
-    margin-left: 0px;
-    width: 40%;
-    float:left;
+.contactUsRight{
+  display: inline-block;
+  // background-color: rgba(0, 255, 0, .5);
+  width: 40%;
+  position: absolute;
+  top: 187px;
+  
 }
+
 
 .inputStyle {
-  width: 300px;
+  width: 500px;
   border-radius: 5px;
 
 }
 
 .buttonPosition {
-  margin-top: 35px;
+  margin-top: 76px;
 }
+
+.resizeNone {
+  resize: none;
+}
+
+
+
+
 
 
 

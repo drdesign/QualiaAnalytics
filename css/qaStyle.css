@@ -9,7 +9,6 @@ Primary style
 
 body {
   overflow: hidden;
-  font-size: 100%;
   font-family: 'Josefin Sans', sans-serif;
   color: rgba(0, 163, 222, 0.9);
   background-color: transparent; }
@@ -37,13 +36,15 @@ p {
   font-size: 16px;
   font-family: 'Arimo', sans-serif; }
 
+.fixed {
+  position: fixed;
+  bottom: 15px; }
+
 #homePage h1 {
   color: #ffffff;
   font-size: 30px;
   padding: 60px 60px 60px 60px;
   font-family: 'Arimo', sans-serif;
-  top: 68%;
-  position: fixed;
   background-color: rgba(0, 0, 0, 0.5);
   padding: 60px 60px 60px 60px; }
 #homePage h2 {
@@ -182,38 +183,54 @@ p {
   background: url("../img/qaGraphMobile.png") no-repeat; }
 
 #contactUs div {
-  top: 55px;
+  paddin-top: 100px;
+  height: 100%;
   position: absolute; }
 #contactUs h1 {
   font-size: 90px;
   font-family: 'Arimo', sans-serif;
   color: #EF5923;
-  padding-top: 15px; }
+  padding-top: 5px;
+  margin-top: 12px;
+  margin-bottom: -20px; }
 #contactUs h2 {
-  font-size: 90px;
+  font-size: 30px;
   font-family: 'Arimo', sans-serif;
   color: #EF5923;
-  padding: 15px 0px 15px 0px; }
+  padding: 0px 0px 0px 0px;
+  margin-top: 12px;
+  margin-bottom: -20px; }
 #contactUs h3 {
   font-size: 22.5px;
   color: #ffffff;
-  padding: 10px 0px 10px 0px; }
+  padding: 0px 0px 0px 0px; }
 #contactUs h4 {
   font-size: 22.5px;
-  color: #ffffff;
+  color: #555555;
   padding: 0px 0px 0px 0px; }
 #contactUs .sideBar {
   font-size: 15px;
   color: #ffffff; }
 #contactUs p {
-  color: #ffffff; }
+  color: #555555; }
+#contactUs a {
+  color: #555555; }
 #contactUs a:hover {
-  color: #ffffff;
+  color: #EF5923;
   text-decoration: none; }
 #contactUs ul li {
   float: left;
   display: inline-block;
   vertical-align: top; }
+#contactUs .liColor img {
+  background-color: #555555;
+  border-radius: 3px;
+  margin: 3px 3px 3px 0px;
+  padding: 2px 2px 2px 2px;
+  -webkit-transition: .2s; }
+#contactUs .liColor a:hover img:hover {
+  background-color: #EF5923;
+  -webkit-transition: .2s; }
 
 .content p {
   padding: 25px;
@@ -493,7 +510,7 @@ html, body {
   top: 0;
   height: 100%;
   width: 100%;
-  background: rgba(239, 89, 35, 0.9);
+  background: rgba(239, 89, 35, 0.95);
   z-index: 2;
   text-align: center;
   padding: 50px 0;
@@ -530,11 +547,18 @@ html, body {
   border-radius: 0.25em;
   -webkit-transition: background 0.2s;
   -moz-transition: background 0.2s;
-  transition: background 0.2s; }
+  transition: background 0.2s;
+  text-decoration: none; }
 
 .no-touch .cd-primary-nav a:hover {
   background-color: #ffffff;
   text-decoration: none; }
+
+.cd-background-color-nav a:hover {
+  background-color: #ffffff;
+  -webkit-transition: background 0.2s;
+  -moz-transition: background 0.2s;
+  transition: background 0.2s; }
 
 .cd-primary-nav .cd-label {
   color: #555555;
@@ -558,6 +582,9 @@ html, body {
   overflow: hidden;
   text-indent: 100%;
   white-space: nowrap; }
+
+.cd-social a:hover {
+  background-color: #ffffff; }
 
 .cd-primary-nav .cd-facebook a {
   background-position: 0 0; }
@@ -721,22 +748,29 @@ html, body {
 
 #form {
   width: 600px;
-  height: 600px;
-  overflow: visible; }
+  height: 900px;
+  overflow: visible;
+  margin-top: 50px; }
 
 .divForm {
-  width: 60%; }
+  display: inline-block;
+  width: 60%;
+  height: 100%; }
 
-.divContactInfo {
-  margin-left: 0px;
+.contactUsRight {
+  display: inline-block;
   width: 40%;
-  float: left; }
+  position: absolute;
+  top: 187px; }
 
 .inputStyle {
-  width: 300px;
+  width: 500px;
   border-radius: 5px; }
 
 .buttonPosition {
-  margin-top: 35px; }
+  margin-top: 76px; }
+
+.resizeNone {
+  resize: none; }
 
 /*# sourceMappingURL=qaStyle.css.map */

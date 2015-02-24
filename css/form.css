@@ -7,8 +7,8 @@
 .info {
     display: inline-block;
     clear: both;
-    margin: 0 0 5px 0;
-    padding: 0 1% 1.1em 1%;
+    margin: 0 0 0px 0;
+    padding: 0 0 0 0;
     border-bottom: 0px dotted #ccc;
 }
 .info[class] {
@@ -146,9 +146,9 @@ label.desc, legend.desc {
     font-size: 150%;
     font-weight: 700;
     color: #EF5923;
-    line-height: 150%;
+    line-height: 200%;
     margin: 0;
-    padding: 10px 0 3px 0;
+    padding: 18px 0 0px 0;
     border: none;
     display: block;
     white-space: normal;
@@ -275,7 +275,7 @@ input.large, select.large {
 .msie[class] select.ieSelectFix.large {
     width: 300px}
 textarea.textarea {
-    width: 300px;
+    width: 500px;
     min-width: 100%;
     max-width: 100%}
 textarea.small {
@@ -532,7 +532,7 @@ form .instruct {
     width: 45%;
     margin: 0 0 0 8px;
     padding: 8px 10px 10px 10px;
-    border: 0px solid #e6e6e6;
+    border: 1px solid #e6e6e6;
     background: transparent;
     visibility: hidden;
     opacity: 0;
@@ -584,7 +584,7 @@ form li.section h3 {
     margin: 0 0 3px 0;
     width: auto;
     padding: 12px 1% 0 1%;
-    border-top: 0px dotted #ccc;
+    border-top: 1px dotted #ccc;
 }
 form li.first {
     padding: 0;
@@ -602,7 +602,7 @@ form li.section div {
     margin: 0 0 1em 0;
     padding: 0 1% 0 1%}
 form li.section.scrollText {
-    border: 0px solid #dedede;
+    border: 1px solid #dedede;
     height: 150px;
     overflow: auto;
     margin-bottom: 10px;
@@ -656,7 +656,7 @@ iframe[src="about:blank"] {
 }
 form li.paging-context {
     clear: both;
-    border-bottom: 0px dotted #ccc;
+    border-bottom: 1px dotted #ccc;
     margin: 0 0 7px 0;
     padding: 5px 1% 10px 1%;
     width: auto !important;
@@ -699,7 +699,7 @@ form li.paging-context {
 .pgStyle1 .selected var {
     background: #FFF7C0;
     color: #000;
-    border: 0px solid #e6dead;
+    border: 1px solid #e6dead;
     font-weight: bold;
 }
 .pgStyle1 b {

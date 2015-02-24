@@ -4,9 +4,9 @@ html {
 body {
     margin: 17px 0 15px 0;
     padding: 0;
-    text-align: center;
+   /* text-align: center;*/
     font-size: small;
-    font-family: "Lucida Grande", Tahoma, Arial, Verdana, sans-serif;
+    font-family: 'Josefin Sans', sans-serif;
 }
 article, aside, figure, figure img, figcaption, hgroup, footer, header, nav, section, video, object, output {
     display: block;
@@ -25,7 +25,7 @@ article, aside, figure, figure img, figcaption, hgroup, footer, header, nav, sec
     width: 640px;
 }
 form.wufoo {
-    /*margin: 20px 14px 0 14px;*/
+    margin: 20px 14px 0 14px;
     padding: 0 0 20000px 0;
     position: relative;
 }
@@ -36,7 +36,7 @@ form.wufoo {
     background-color: #dedede;
     text-indent: -9000px;
     text-decoration: none;
-}*/
+}
 /*#logo a {
     min-height: 40px;
     height: 40px;
